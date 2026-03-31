@@ -36,7 +36,8 @@ Make sure `opencode-cmux` is **not** listed in `opencode.json` when using the sy
 
 | Event | cmux action |
 |---|---|
-| Session starts working | Sidebar status: "working" (amber, terminal icon) |
+| Session starts working | Sidebar status: one combined `working: ...` line showing the latest prompt/tool/thinking/patch activity |
+| Subagent starts working | Extra sidebar rows like `• agent-name: searching files` for each active subagent |
 | Session completes (primary) | Desktop notification + log + clear status |
 | Session completes (subagent) | Log only (no notification spam) |
 | Session error | Desktop notification + log + clear status |
